@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Socchess con Tabella a Scacchiera</title>
+    <title>Soc-c-hess</title>
     <style>
-        .image-container {
+        .game-container {
             position: relative;
-            display: inline-block;
-            width: 1400px;  /* Imposta la larghezza del campo da calcio */
-            height: 760px; /* Imposta l'altezza del campo da calcio */
+            margin:auto;
+            top: 50%;
+            width: 1200px;  /* Imposta la larghezza del campo da calcio */
+            height: 700px; /* Imposta l'altezza del campo da calcio */
         }
 
 
@@ -57,7 +58,8 @@
         }
 
         body {
-            background-color: rgb(69, 156, 69);
+            min-height: 300vh;
+            background-color: rgb(0, 99, 0);
         }
 
         td {
@@ -86,9 +88,8 @@
     
 
 
-    <div class="image-container">
-            <img src="https://st.depositphotos.com/2331871/4753/i/950/depositphotos_47539851-stock-photo-green-soccer-field-from-top.jpg" class="background">
-
+    <div class="game-container">
+            <img src = soccer-field-1147736.jpg class = "background">
 
         <!-- Tabella sovrapposta -->
             <table class = 'scacchiera'>
@@ -124,7 +125,6 @@
             </table>
 
             <table class="table_draft_sx">
-                <thead>Selezione pedine</thead>
                 <tbody>
                     <!-- Creazione della tabella 6x6 con alternanza dei colori -->
                     <script>

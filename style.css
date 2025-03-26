@@ -14,6 +14,16 @@
     
 }
 
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #2e2e2e;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombra del testo */
+    font-family: 'Arial', sans-serif; /* Font elegante */
+}
+
 
 .scacchiera {
     position: absolute;
@@ -24,12 +34,15 @@
     height: 500px;
 }
 
-.pedina{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(0, 0, 0);
+.pedina {
+    width: 40px;
+    height: 40px;
+    background-color: red;
     border-radius: 50%;
-    cursor: move;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .table_draft_dx{

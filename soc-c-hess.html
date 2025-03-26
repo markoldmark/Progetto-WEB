@@ -7,11 +7,11 @@
     <title>Soc-c-hess</title>
 </head>
 <body>
+    <h1 class="title">SOC-C-HESS</h1>
     <div class="game-container">
-        <img src = soccer-field-1147736.jpg class = "background">
+        <img src = soccer_field.jpg class = "background">
 
-        <div>
-        <!-- Tabella sovrapposta -->
+        <div id="grid-container">
             <table class = 'scacchiera'>
                 <tbody>
                     <!-- Creazione della tabella 6x6 con alternanza dei colori -->
@@ -27,27 +27,11 @@
                     </script>
                 </tbody>
             </table>
-            <div id="pedina1" class="pedina" draggable="true"></div>
         </div>
-        <table class="table_draft_dx">
-            <tbody>
-                <!-- Creazione della tabella 6x6 con alternanza dei colori -->
-                <script>
-                        for (let i = 0; i < 6; i++) {
-                            document.write('<tr>');
-                            for (let j = 0; j < 3; j++) {
-                                classe = 'nero'
-                                document.write(`<td class="${classe}"></td>`);
-                            }
-                            document.write('</tr>');
-                        }
-                    </script>
-                </tbody>
-            </table>
-
-            <table class="table_draft_sx">
+        <div id="dx-container">
+            <table class="table_draft_dx">
                 <tbody>
-                    <!-- Creazione della tabella 6x6 con alternanza dei colori -->
+                <!-- Creazione della tabella 6x6 con alternanza dei colori -->
                     <script>
                         for (let i = 0; i < 6; i++) {
                             document.write('<tr>');
@@ -60,6 +44,25 @@
                     </script>
                 </tbody>
             </table>
+        </div>
+        <div id="sx-container">
+            <table class="table_draft_sx">
+                <tbody>
+                    <!-- Creazione della tabella 6x6 con alternanza dei colori -->
+                    <script>
+                        for (let i = 0; i < 6; i++) {
+                            document.write('<tr>');
+                            for (let j = 0; j < 3; j++) {
+                                let cellId = `sx-${i}-${j}`;
+                                document.write(`<td class="nero" id="${cellId}"></td>`);
+                            }
+                            document.write('</tr>');
+                        }
+                    </script>                    
+                </tbody>
+            </table>
+        </div>
+        <script src="script_pedine.js"></script>
     </div>
 </body>
 </html>
